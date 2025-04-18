@@ -16,7 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased">
-        <ThemeProvider scriptProps={{ 'data-cfasync': 'false' }}>
+        <ThemeProvider
+          scriptProps={{ 'data-cfasync': 'false' }}
+          attribute="class"
+        >
           {children}
         </ThemeProvider>
         <Analytics />
