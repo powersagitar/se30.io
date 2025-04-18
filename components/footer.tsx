@@ -36,7 +36,7 @@ export default function Footer() {
       <Separator className="bg-muted-foreground my-2" />
 
       <p>
-        Copyright &copy; {new Date().getUTCFullYear()} Cohort of SE&apos; 30.
+        Copyright &copy; {new Date().getUTCFullYear()} Cohort of SE &apos;30.
         All rights reserved.
       </p>
     </footer>
