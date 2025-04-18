@@ -1,24 +1,17 @@
-import Link from 'next/link';
-
 export default function Home() {
   return (
-    <div className="flex flex-col items-center">
-      <h1 className="text-center font-extrabold">
-        University of Waterloo Software Engineering 2030 Class Profile
-      </h1>
+    <main>
+      <article>
+        <header className="mt-auto mb-6 flex flex-col gap-6">
+          <h1 className="text-9xl font-black">
+            Software Engineering
+            <br />
+            2030 Class Profile
+          </h1>
 
-      <p>Site under construction.</p>
-
-      <p>
-        SE 30&apos; Discord server:{' '}
-        <Link
-          href="https://discord.gg/nw4N2NNBuE"
-          className="text-bold underline"
-        >
-          nw4N2NNBuE
-        </Link>
-        .
-      </p>
-    </div>
+          <h2 className="text-5xl font-extrabold">University of Waterloo</h2>
+        </header>
+      </article>
+    </main>
   );
 }

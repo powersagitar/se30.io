@@ -1,3 +1,5 @@
+import Footer from '@/components/footer';
+import Header from '@/components/header';
 import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from 'next';
 import { ThemeProvider } from 'next-themes';
@@ -15,12 +17,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="antialiased">
+      <body className="mx-6 antialiased">
         <ThemeProvider
           scriptProps={{ 'data-cfasync': 'false' }}
           attribute="class"
         >
-          {children}
+          <div className="flex min-h-screen flex-col justify-between">
+            <Header />
+            {children}
+          </div>
+
+          <Footer />
         </ThemeProvider>
         <Analytics />
       </body>
