@@ -39,10 +39,10 @@ export default function Home() {
             Software Engineering is commonly compared to Computer Science, and
             is often seen as its more-constrained, engineering-oriented
             counterpart. Prospective students may wonder whether Software
-            Engineering is the right fit for them, and whether they'll enjoy the
-            environment. This profile attempts to showcase who SE 2030 students
-            are, what they've done, and their journey through university will be
-            like.
+            Engineering is the right fit for them, and whether they will enjoy
+            the environment. This profile attempts to showcase who SE 2030
+            students are, what they have done, and their journey through
+            university will be like.
           </SectionParagraph>
 
           <SectionParagraph>
