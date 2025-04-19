@@ -4,7 +4,7 @@ import { Separator } from '../ui/separator';
 
 export default function Footer() {
   return (
-    <footer className="text-background bg-foreground dark:text-foreground dark:bg-muted -mx-6 p-6">
+    <footer className="text-background bg-foreground dark:text-foreground dark:bg-muted -mx-6 mt-[10%] p-6">
       <div className="flex justify-between">
         <div>
           <p>
