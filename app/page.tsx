@@ -20,9 +20,9 @@ export default function Home() {
           </hgroup>
         </header>
 
-        <Section id="our-program">
+        <Section>
           <header>
-            <SectionHeading>Our Program</SectionHeading>
+            <SectionHeading id="our-program">Our Program</SectionHeading>
           </header>
 
           <SectionParagraph>
