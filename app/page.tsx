@@ -16,7 +16,9 @@ export default function Home() {
               2030 Class Profile
             </h1>
 
-            <p className="text-5xl font-extrabold">University of Waterloo</p>
+            <p className="text-accent-foreground text-5xl font-extrabold">
+              University of Waterloo
+            </p>
           </hgroup>
         </header>
 
