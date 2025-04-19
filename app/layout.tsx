@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className="mx-6 antialiased">
         <ThemeProvider
           scriptProps={{ 'data-cfasync': 'false' }}
