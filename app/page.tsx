@@ -29,7 +29,7 @@ export default function Home() {
 
           <SectionParagraph>
             Software Engineering at the University of Waterloo is an
-            interdisciplinary program supported by both teh Faculty of
+            interdisciplinary program supported by both the Faculty of
             Mathematics and the Faculty of Engineering. Students spend 8
             semesters in school with similar schedules and gain work experience
             over 6 co-op terms. Undergraduates in the Software Engineering
