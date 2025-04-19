@@ -14,17 +14,18 @@ export function SectionHeading({
   id,
 }: SectionProps & { id: string }) {
   return (
-    <h2
-      id={id}
+    <Link
+      href={`#${id}`}
       className={cn(
-        'mt-[10%] mb-8 text-6xl font-black hover:cursor-pointer',
+        'mt-[10%] mb-8 inline-block text-6xl font-black',
         className
       )}
     >
-      <Link href={`#${id}`}>
-        <span className="text-muted-foreground">#</span> {children}
-      </Link>
-    </h2>
+      <span className="text-muted-foreground"># </span>
+      <h2 id={id} className="inline">
+        {children}
+      </h2>
+    </Link>
   );
 }
 
