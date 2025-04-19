@@ -36,8 +36,13 @@ export default function Footer() {
       <Separator className="bg-muted-foreground my-2" />
 
       <p>
-        Copyright &copy; {new Date().getUTCFullYear()} Cohort of SE &apos;30.
-        All rights reserved.
+        Copyright &copy; {new Date().getUTCFullYear()} Cohort of SE &apos;30.{' '}
+        <Link
+          href="https://github.com/powersagitar/se30.io"
+          className="underline underline-offset-4"
+        >
+          Some rights reserved.
+        </Link>
       </p>
     </footer>
   );
