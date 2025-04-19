@@ -2,8 +2,8 @@ export default function Home() {
   return (
     <main>
       <article>
-        <header>
-          <hgroup className="mt-auto mb-6 flex flex-col gap-8">
+        <header className="flex min-h-screen flex-col">
+          <hgroup className="mt-auto mb-10 flex flex-col gap-8">
             <h1 className="text-9xl font-black">
               Software Engineering
               <br />
