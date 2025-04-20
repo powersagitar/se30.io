@@ -10,10 +10,10 @@ export default function Header() {
 function EngineeringStrip() {
   return (
     <div className="flex h-2 w-screen">
-      <span className="h-full w-full bg-[#C2A8F0]" />
-      <span className="h-full w-full bg-[#A05DCB]" />
-      <span className="h-full w-full bg-[#865DA4]" />
-      <span className="h-full w-full bg-[#5D0096]" />
+      <span className="bg-engineering-1 h-full w-full" />
+      <span className="bg-engineering-2 h-full w-full" />
+      <span className="bg-engineering-3 h-full w-full" />
+      <span className="bg-engineering-4 h-full w-full" />
     </div>
   );
 }
@@ -21,10 +21,10 @@ function EngineeringStrip() {
 function MathematicsStrip() {
   return (
     <div className="flex h-2 w-screen">
-      <span className="h-full w-full bg-[#EFBBF0]" />
-      <span className="h-full w-full bg-[#EF60AD]" />
-      <span className="h-full w-full bg-[#DF1AA0]" />
-      <span className="h-full w-full bg-[#A2006E]" />
+      <span className="bg-mathematics-1 h-full w-full" />
+      <span className="bg-mathematics-2 h-full w-full" />
+      <span className="bg-mathematics-3 h-full w-full" />
+      <span className="bg-mathematics-4 h-full w-full" />
     </div>
   );
 }
