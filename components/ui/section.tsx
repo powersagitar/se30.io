@@ -31,7 +31,7 @@ export function SectionHeading({
 
 export function SectionParagraph({ children, className }: SectionProps) {
   return (
-    <p className={cn('mb-5 text-lg leading-8 sm:mb-6', className)}>
+    <p className={cn('mb-5 max-w-4xl text-lg leading-8 sm:mb-6', className)}>
       {children}
     </p>
   );

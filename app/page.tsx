@@ -33,7 +33,7 @@ export default function Home() {
             interdisciplinary program supported by both the Faculty of
             Mathematics and the Faculty of Engineering. Students spend eight
             academic semesters in school with similar schedules and gain work
-            experience through six co-op terms. Upon completing their 4 ⅔-year
+            experience through six co-op terms. Upon completing their 4⅔–year
             journey, graduates are awarded a Bachelor of Software Engineering
             (BSE) degree.
           </SectionParagraph>
