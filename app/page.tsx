@@ -30,26 +30,26 @@ export default function Home() {
           <SectionParagraph>
             Software Engineering at the University of Waterloo is an
             interdisciplinary program supported by both the Faculty of
-            Mathematics and the Faculty of Engineering. Students spend 8
-            semesters in school with similar schedules and gain work experience
-            over 6 co-op terms. Undergraduates in the Software Engineering
-            program are awarded a Bachelor of Software Engineering (BSE) degree
-            at the end of their 4 ⅔-year journey.
+            Mathematics and the Faculty of Engineering. Students spend eight
+            academic semesters in school with similar schedules and gain work
+            experience through six co-op terms. Upon completing their 4 ⅔-year
+            journey, graduates are awarded a Bachelor of Software Engineering
+            (BSE) degree.
           </SectionParagraph>
 
           <SectionParagraph>
-            Software Engineering is commonly compared to Computer Science, and
-            is often seen as its more-constrained, engineering-oriented
-            counterpart. Prospective students may wonder whether Software
-            Engineering is the right fit for them, and whether they will enjoy
-            the environment. This profile attempts to showcase who SE 2030
-            students are, what they have done, and their journey through
-            university will be like.
+            Software Engineering is often compared to Computer Science and is
+            considered its more structured, engineering-oriented counterpart.
+            Prospective students may wonder if Software Engineering is the right
+            fit for them and if they will enjoy the program environment. This
+            profile aims to showcase who the SE class of 2030 students are, what
+            they have accomplished, and what their university journey will be
+            like.
           </SectionParagraph>
 
           <SectionParagraph>
             This profile is not affiliated with the Software Engineering program
-            or the University of Waterloo in any way.
+            or the University of Waterloo.
           </SectionParagraph>
         </Section>
       </article>
