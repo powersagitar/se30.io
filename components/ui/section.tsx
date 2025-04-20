@@ -16,7 +16,7 @@ export function SectionHeading({
   return (
     <Link
       href={`#${id}`}
-      className={cn('mt-[10%] mb-8 block text-6xl font-black', className)}
+      className={cn('mb-8 block text-6xl font-black', className)}
     >
       <span className="text-muted-foreground"># </span>
       <h2 id={id} className="inline">
@@ -31,5 +31,5 @@ export function SectionParagraph({ children, className }: SectionProps) {
 }
 
 export function Section({ children, className }: SectionProps) {
-  return <article className={cn(className)}>{children}</article>;
+  return <article className={cn('mt-[10%]', className)}>{children}</article>;
 }
