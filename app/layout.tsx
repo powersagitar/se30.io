@@ -6,7 +6,7 @@ import { ThemeProvider } from 'next-themes';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: "SE 30' Class Profile",
+  title: "SE '30 Class Profile",
   description: 'University of Waterloo Software Engineering 2030 Class Profile',
 };
 
