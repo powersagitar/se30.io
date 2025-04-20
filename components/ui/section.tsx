@@ -16,10 +16,7 @@ export function SectionHeading({
   return (
     <Link
       href={`#${id}`}
-      className={cn(
-        'mt-[10%] mb-8 inline-block text-6xl font-black',
-        className
-      )}
+      className={cn('mt-[10%] mb-8 block text-6xl font-black', className)}
     >
       <span className="text-muted-foreground"># </span>
       <h2 id={id} className="inline">
