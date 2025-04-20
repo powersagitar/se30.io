@@ -38,5 +38,5 @@ export function SectionParagraph({ children, className }: SectionProps) {
 }
 
 export function Section({ children, className }: SectionProps) {
-  return <article className={cn('mt-[10%]', className)}>{children}</article>;
+  return <article className={cn('mt-[10%] max-w-4xl', className)}>{children}</article>;
 }
