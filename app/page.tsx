@@ -3,6 +3,7 @@ import {
   SectionHeading,
   SectionParagraph,
 } from '@/components/ui/section';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -50,6 +51,25 @@ export default function Home() {
           <SectionParagraph>
             This profile is not affiliated with the Software Engineering program
             or the University of Waterloo.
+          </SectionParagraph>
+        </Section>
+
+        <Section>
+          <header>
+            <SectionHeading id="class-profile">Class Profile</SectionHeading>
+          </header>
+
+          <SectionParagraph>Data yet to be collected.</SectionParagraph>
+
+          <SectionParagraph>
+            If you wish to contribute to the survey, please check out the{' '}
+            <Link
+              href="https://github.com/powersagitar/se30.io/discussions/13"
+              className="underline underline-offset-4"
+            >
+              discussion
+            </Link>
+            .
           </SectionParagraph>
         </Section>
       </article>
