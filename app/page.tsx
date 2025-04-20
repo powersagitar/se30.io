@@ -43,8 +43,8 @@ export default function Home() {
             Prospective students may wonder if Software Engineering is the right
             fit for them and if they will enjoy the program environment. This
             profile aims to showcase who the SE class of 2030 students are, what
-            they have accomplished, and what their university journey will be
-            like.
+            they have accomplished, and what future students can expect from
+            their experience in the program.
           </SectionParagraph>
 
           <SectionParagraph>
