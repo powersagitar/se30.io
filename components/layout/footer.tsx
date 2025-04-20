@@ -9,7 +9,7 @@ export default function Footer() {
         <div>
           <p>
             This profile is not affiliated with the Software Engineering program
-            or the University of Waterloo in any way.
+            or the University of Waterloo.
           </p>
 
           <p>
