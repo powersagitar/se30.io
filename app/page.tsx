@@ -1,3 +1,4 @@
+import ProfileCarousel from '@/components/home/profile-carousel';
 import {
   Section,
   SectionHeading,
@@ -52,6 +53,14 @@ export default function Home() {
             This profile is not affiliated with the Software Engineering program
             or the University of Waterloo.
           </SectionParagraph>
+        </Section>
+
+        <Section>
+          <header>
+            <SectionHeading id="our-cohort">Our Cohort</SectionHeading>
+          </header>
+
+          <ProfileCarousel />
         </Section>
 
         <Section>
