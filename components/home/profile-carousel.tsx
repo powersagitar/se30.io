@@ -22,32 +22,32 @@ export default function ProfileCarousel() {
       <CarouselContent>
         {profiles.map((profile, idx) => (
           <CarouselItem key={'profile-carousel-' + idx} className="basis-1/3">
-            <Card className="h-full w-full p-8">
-              <div className="flex items-center justify-between">
-                <Avatar>
-                  <AvatarImage
-                    src={
-                      profile.github
-                        ? getAvatarFromGitHub(profile.github).toString()
-                        : ''
-                    }
-                  />
-                  <AvatarFallback className="font-medium uppercase">
-                    {profile.firstName.charAt(0)}
-                    {profile.lastName.charAt(0)}
-                  </AvatarFallback>
-                </Avatar>
+            <Card className="flex flex-row items-center p-6">
+              <Avatar>
+                <AvatarImage
+                  src={
+                    profile.github
+                      ? getAvatarFromGitHub(profile.github).toString()
+                      : ''
+                  }
+                />
+                <AvatarFallback className="font-medium uppercase">
+                  {profile.firstName.charAt(0)}
+                  {profile.lastName.charAt(0)}
+                </AvatarFallback>
+              </Avatar>
 
+              <div>
                 <h3 className="text-accent-foreground font-semibold uppercase">
                   {profile.firstName} {profile.lastName}
                 </h3>
-              </div>
 
-              {profile.bio && (
-                <p>
-                  <i>{profile.bio}</i>
-                </p>
-              )}
+                {profile.bio && (
+                  <p>
+                    <i>{profile.bio}</i>
+                  </p>
+                )}
+              </div>
             </Card>
           </CarouselItem>
         ))}
