@@ -22,7 +22,7 @@ export default function ProfileCarousel() {
       <CarouselContent>
         {profiles.map((profile, idx) => (
           <CarouselItem key={'profile-carousel-' + idx} className="basis-1/3">
-            <Card className="flex flex-row items-center p-6">
+            <Card className="flex h-full flex-row items-center p-6">
               <Avatar>
                 <AvatarImage
                   src={
