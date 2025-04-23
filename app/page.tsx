@@ -1,4 +1,5 @@
 import ProfileCarousel from '@/components/home/profile-carousel';
+import { PageHeader, PageSubtitle, PageTitle } from '@/components/ui/page';
 import {
   Section,
   SectionHeading,
@@ -11,19 +12,15 @@ export default async function Home() {
   return (
     <main>
       <article>
-        <header className="flex min-h-screen flex-col">
-          <hgroup className="mt-auto mb-10 flex flex-col gap-8">
-            <h1 className="text-5xl font-black sm:text-9xl">
-              Software Engineering
-              <br />
-              2030 Class Profile
-            </h1>
+        <PageHeader>
+          <PageTitle>
+            Software Engineering
+            <br />
+            2030 Class Profile
+          </PageTitle>
 
-            <p className="text-accent-foreground text-3xl font-extrabold sm:text-5xl">
-              University of Waterloo
-            </p>
-          </hgroup>
-        </header>
+          <PageSubtitle>University of Waterloo</PageSubtitle>
+        </PageHeader>
 
         <Section>
           <header>
