@@ -4,9 +4,10 @@ import {
   SectionHeading,
   SectionParagraph,
 } from '@/components/ui/section';
+import { displaySectionOurCohort } from '@/flags';
 import Link from 'next/link';
 
-export default function Home() {
+export default async function Home() {
   return (
     <main>
       <article>
@@ -55,13 +56,15 @@ export default function Home() {
           </SectionParagraph>
         </Section>
 
-        <Section>
-          <header>
-            <SectionHeading id="our-cohort">Our Cohort</SectionHeading>
-          </header>
+        {(await displaySectionOurCohort()) && (
+          <Section>
+            <header>
+              <SectionHeading id="our-cohort">Our Cohort</SectionHeading>
+            </header>
 
-          <ProfileCarousel />
-        </Section>
+            <ProfileCarousel />
+          </Section>
+        )}
 
         <Section>
           <header>
