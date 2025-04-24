@@ -71,7 +71,7 @@ export default async function Cohort() {
               </h3>
 
               {profile.bio && (
-                <p>
+                <p className="bg-muted rounded-lg border p-4">
                   <i>{profile.bio}</i>
                 </p>
               )}
