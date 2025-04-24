@@ -60,9 +60,10 @@ export default async function Cohort() {
                   }
                   alt={`Profile picture of ${profile.firstName} ${profile.lastName}.`}
                 />
-                <AvatarFallback className="font-medium uppercase">
-                  {profile.firstName.charAt(0)}
-                  {profile.lastName.charAt(0)}
+                <AvatarFallback className="aspect-square text-center text-lg font-medium uppercase">
+                  {profile.firstName}
+                  <br />
+                  {profile.lastName}
                 </AvatarFallback>
               </Avatar>
 
