@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils';
 import { ClassValue } from 'clsx';
 
 type IconProps = {
-  className?: Readonly<ClassValue[]>;
+  className?: Readonly<ClassValue>;
 };
 
 export function GitHubIcon({ className }: IconProps) {
