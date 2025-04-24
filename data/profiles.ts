@@ -10,8 +10,8 @@ export const profiles: Profile[] = [
       displayName: 'powerium.io',
       href: new URL('https://www.powerium.io'),
     },
-    github: 'https://github.com/powersagitar',
-    linkedin: 'https://www.linkedin.com/in/powersagitar',
+    github: 'powersagitar',
+    linkedin: 'powersagitar',
   },
   {
     firstName: 'a',

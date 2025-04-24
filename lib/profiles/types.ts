@@ -1,6 +1,4 @@
 export type Email = `${string}@${string}`;
-export type GitHubProfile = `https://github.com/${string}`;
-export type LinkedInProfile = `https://www.linkedin.com/in/${string}`;
 export type Portfolio = {
   displayName: string;
   href: URL;
@@ -12,6 +10,6 @@ export type Profile = {
   bio?: string;
   email?: Email;
   portfolio?: Portfolio;
-  github?: GitHubProfile;
-  linkedin?: LinkedInProfile;
+  github?: string;
+  linkedin?: string;
 };

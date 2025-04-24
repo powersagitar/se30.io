@@ -1,13 +1,8 @@
-import { GitHubProfile } from './types';
-
 // https://stackoverflow.com/a/36380674/20143641
-export function getAvatarFromGitHub(
-  profile: GitHubProfile,
-  size?: number
-): URL {
+export function getAvatarFromGitHub(username: string, size?: number): URL {
   if (size) {
-    return new URL(profile + `.png?size=${size}`);
+    return new URL(`https://github.com/${username}.png?size=${size}`);
   } else {
-    return new URL(profile + '.png');
+    return new URL(`https://github.com/${username}.png`);
   }
 }
