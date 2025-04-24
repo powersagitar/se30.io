@@ -30,6 +30,7 @@ export default function ProfileCarousel() {
                       ? getAvatarFromGitHub(profile.github).toString()
                       : ''
                   }
+                  alt={`Profile picture of ${profile.firstName} ${profile.lastName}.`}
                 />
                 <AvatarFallback className="font-medium uppercase">
                   {profile.firstName.charAt(0)}
