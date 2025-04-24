@@ -4,14 +4,14 @@ import { GitHubIcon, LinkedInIcon } from '@/components/ui/icons';
 import { PageHeader, PageSubtitle, PageTitle } from '@/components/ui/page';
 import { Section, SectionHeading } from '@/components/ui/section';
 import { profiles } from '@/data/profiles';
-import { displaySectionOurCohort } from '@/flags';
+import { enableOurCohort } from '@/flags';
 import { getAvatarFromGitHub } from '@/lib/profiles/avatars';
 import { ExternalLink, Mail } from 'lucide-react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 export default async function Cohort() {
-  if (!(await displaySectionOurCohort())) {
+  if (!(await enableOurCohort())) {
     notFound();
   }
 

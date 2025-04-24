@@ -5,7 +5,7 @@ import {
   SectionHeading,
   SectionParagraph,
 } from '@/components/ui/section';
-import { displaySectionOurCohort } from '@/flags';
+import { enableOurCohort } from '@/flags';
 import Link from 'next/link';
 
 export default async function Home() {
@@ -51,7 +51,7 @@ export default async function Home() {
         </SectionParagraph>
       </Section>
 
-      {(await displaySectionOurCohort()) && (
+      {(await enableOurCohort()) && (
         <Section>
           <header>
             <SectionHeading id="our-cohort">Our Cohort</SectionHeading>
