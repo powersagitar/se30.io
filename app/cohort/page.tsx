@@ -82,6 +82,7 @@ export default async function Cohort() {
                   <>
                     <dt className="content-center">
                       <Mail className="h-[90%]" />
+                      <span className="sr-only">Email</span>
                     </dt>
                     <dd>
                       <Link href={'mailto:' + profile.email}>
@@ -95,6 +96,7 @@ export default async function Cohort() {
                   <>
                     <dt className="content-center">
                       <ExternalLink className="h-[90%]" />
+                      <span className="sr-only">Portfolio</span>
                     </dt>
                     <dd>
                       <Link href={profile.portfolio.href.toString()}>
@@ -108,6 +110,7 @@ export default async function Cohort() {
                   <>
                     <dt className="content-center">
                       <GitHubIcon className="h-[90%]" />
+                      <span className="sr-only">GitHub</span>
                     </dt>
                     <dd>
                       <Link href={'https://github.com/' + profile.github}>
@@ -121,6 +124,7 @@ export default async function Cohort() {
                   <>
                     <dt className="content-center">
                       <LinkedInIcon className="h-[90%]" />
+                      <span className="sr-only">LinkedIn</span>
                     </dt>
                     <dd>
                       <Link
