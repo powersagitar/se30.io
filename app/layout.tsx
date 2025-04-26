@@ -24,7 +24,7 @@ export default function RootLayout({
         >
           <div className="flex min-h-screen flex-col justify-between">
             <Header />
-            <main>{children}</main>
+            <main className="mx-auto max-w-7xl">{children}</main>
           </div>
 
           <Footer />

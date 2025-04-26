@@ -13,7 +13,7 @@ export function PageHeader({ children }: PageProps) {
 }
 
 export function PageTitle({ children }: PageProps) {
-  return <h1 className="text-5xl font-black sm:text-9xl">{children}</h1>;
+  return <h1 className="text-5xl font-black sm:text-8xl">{children}</h1>;
 }
 
 export function PageSubtitle({ children }: PageProps) {
