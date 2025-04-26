@@ -45,7 +45,7 @@ export default async function Cohort() {
           <SectionHeading id="us">Us</SectionHeading>
         </header>
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-3 gap-6">
           {profiles.map((profile, idx) => (
             <Card
               key={'cohort-profiles-card-' + idx}
