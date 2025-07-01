@@ -21,7 +21,7 @@
     "clsx": "^2.1.1",
     "embla-carousel-auto-scroll": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
-    "flags": "^3.2.0",
+    "flags": "^4.0.1",
     "lucide-react": "^0.503.0",
     "motion": "^12.9.4",
     "next": "15.3.1",
