@@ -29,14 +29,17 @@ export function SectionParagraph({
   className,
   ...props
 }: ComponentPropsWithRef<'p'>) {
-  return (
-    <p className={cn('mb-5 text-lg leading-8 sm:mb-6', className)} {...props} />
-  );
+  return <p className={cn('text-lg leading-8', className)} {...props} />;
 }
 
 export function Section({
   className,
   ...props
 }: ComponentPropsWithRef<'article'>) {
-  return <article className={cn('mt-[10%]', className)} {...props} />;
+  return (
+    <article
+      className={cn('mt-[10%] flex flex-col gap-5', className)}
+      {...props}
+    />
+  );
 }
