@@ -2,6 +2,10 @@ import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { ComponentPropsWithRef } from 'react';
 
+export function SectionHeader(props: ComponentPropsWithRef<'header'>) {
+  return <header {...props} />;
+}
+
 export function SectionHeading({
   className,
   id,

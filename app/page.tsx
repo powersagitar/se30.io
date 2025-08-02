@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { PageHeader, PageSubtitle, PageTitle } from '@/components/ui/page';
 import {
   Section,
+  SectionHeader,
   SectionHeading,
   SectionParagraph,
 } from '@/components/ui/section';
@@ -23,9 +24,9 @@ export default async function Home() {
       </PageHeader>
 
       <Section>
-        <header>
+        <SectionHeader>
           <SectionHeading id="our-program">Our Program</SectionHeading>
-        </header>
+        </SectionHeader>
 
         <SectionParagraph>
           Software Engineering at the University of Waterloo is an
@@ -54,9 +55,9 @@ export default async function Home() {
 
       {(await enableOurCohort()) && (
         <Section>
-          <header>
+          <SectionHeader>
             <SectionHeading id="our-cohort">Our Cohort</SectionHeading>
-          </header>
+          </SectionHeader>
 
           <ProfileCarousel />
 
@@ -67,9 +68,9 @@ export default async function Home() {
       )}
 
       <Section>
-        <header>
+        <SectionHeader>
           <SectionHeading id="class-profile">Class Profile</SectionHeading>
-        </header>
+        </SectionHeader>
 
         <SectionParagraph>Data yet to be collected.</SectionParagraph>
 

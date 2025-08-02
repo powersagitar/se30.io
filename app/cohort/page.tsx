@@ -2,7 +2,11 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card } from '@/components/ui/card';
 import { GitHubIcon, LinkedInIcon } from '@/components/ui/icons';
 import { PageHeader, PageSubtitle, PageTitle } from '@/components/ui/page';
-import { Section, SectionHeading } from '@/components/ui/section';
+import {
+  Section,
+  SectionHeader,
+  SectionHeading,
+} from '@/components/ui/section';
 import { profiles } from '@/data/profiles';
 import { enableOurCohort } from '@/flags';
 import { getAvatarFromGitHub } from '@/lib/profiles/avatars';
@@ -41,9 +45,9 @@ export default async function Cohort() {
       </PageHeader>
 
       <Section>
-        <header>
+        <SectionHeader>
           <SectionHeading id="us">Us</SectionHeading>
-        </header>
+        </SectionHeader>
 
         <div className="grid grid-cols-3 gap-6">
           {profiles.map((profile, idx) => (
