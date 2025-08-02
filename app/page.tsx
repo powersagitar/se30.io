@@ -1,4 +1,5 @@
 import ProfileCarousel from '@/components/home/profile-carousel';
+import { Button } from '@/components/ui/button';
 import { PageHeader, PageSubtitle, PageTitle } from '@/components/ui/page';
 import {
   Section,
@@ -58,6 +59,10 @@ export default async function Home() {
           </header>
 
           <ProfileCarousel />
+
+          <Button asChild>
+            <Link href="/cohort">Find Every Single One of Us</Link>
+          </Button>
         </Section>
       )}
 
