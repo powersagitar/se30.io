@@ -1,18 +1,12 @@
 import { cn } from '@/lib/utils';
-import { type ClassValue } from 'clsx';
 import Link from 'next/link';
-import { ReactNode } from 'react';
-
-type SectionProps = {
-  children: Readonly<ReactNode>;
-  className?: Readonly<ClassValue>;
-};
+import { ComponentPropsWithRef } from 'react';
 
 export function SectionHeading({
-  children,
   className,
   id,
-}: SectionProps & { id: string }) {
+  ...props
+}: ComponentPropsWithRef<'h2'>) {
   return (
     <Link
       href={`#${id}`}
@@ -22,21 +16,23 @@ export function SectionHeading({
       )}
     >
       <span className="text-muted-foreground"># </span>
-      <h2 id={id} className="inline">
-        {children}
-      </h2>
+      <h2 id={id} className="inline" {...props} />
     </Link>
   );
 }
 
-export function SectionParagraph({ children, className }: SectionProps) {
+export function SectionParagraph({
+  className,
+  ...props
+}: ComponentPropsWithRef<'p'>) {
   return (
-    <p className={cn('mb-5 text-lg leading-8 sm:mb-6', className)}>
-      {children}
-    </p>
+    <p className={cn('mb-5 text-lg leading-8 sm:mb-6', className)} {...props} />
   );
 }
 
-export function Section({ children, className }: SectionProps) {
-  return <article className={cn('mt-[10%]', className)}>{children}</article>;
+export function Section({
+  className,
+  ...props
+}: ComponentPropsWithRef<'article'>) {
+  return <article className={cn('mt-[10%]', className)} {...props} />;
 }
