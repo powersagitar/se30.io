@@ -7,7 +7,7 @@ import {
   SectionHeading,
   SectionParagraph,
 } from '@/components/ui/section';
-import { enableOurCohort } from '@/flags';
+import { dataCollectionInProgress, enableOurCohort } from '@/flags';
 import Link from 'next/link';
 
 export default async function Home() {
@@ -72,18 +72,29 @@ export default async function Home() {
           <SectionHeading id="class-profile">Class Profile</SectionHeading>
         </SectionHeader>
 
-        <SectionParagraph>Data yet to be collected.</SectionParagraph>
-
-        <SectionParagraph>
-          If you wish to contribute to the survey, please check out the{' '}
-          <Link
-            href="https://github.com/powersagitar/se30.io/discussions/13"
-            className="underline underline-offset-4"
-          >
-            discussion
-          </Link>
-          .
-        </SectionParagraph>
+        {(await dataCollectionInProgress()) ? (
+          <>
+            <SectionParagraph>Data collection in progress.</SectionParagraph>
+            <SectionParagraph>
+              Please check either Piazza, Discord, or Instagram for link to
+              survey.
+            </SectionParagraph>
+            <SectionParagraph>
+              <strong>
+                Only SE2030 students will have access to complete the survey.
+              </strong>
+            </SectionParagraph>
+          </>
+        ) : (
+          <>
+            <SectionParagraph>
+              Data collection hasn't started or has been completed.
+            </SectionParagraph>
+            <SectionParagraph>
+              Please check the SE2030 Discord server for more details.
+            </SectionParagraph>
+          </>
+        )}
       </Section>
     </article>
   );
