@@ -88,7 +88,7 @@ export default async function Home() {
         ) : (
           <>
             <SectionParagraph>
-              Data collection hasn't started or has been completed.
+              Data collection hasn&apos;t started or has been completed.
             </SectionParagraph>
             <SectionParagraph>
               Please check the SE2030 Discord server for more details.
